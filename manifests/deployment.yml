@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: syedgameoflife 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: syedgameoflife
+  template:
+    metadata:
+      labels:
+        app: syedgameoflife 
+    spec:
+      containers:
+        - name: syedgameoflife 
+          image: docker303.azurecr.io/syedgameoflife
+          ports:
+          - containerPort: 9090
