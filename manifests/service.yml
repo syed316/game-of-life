@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 apiVersion: v1
 kind: Service
 metadata:
@@ -7,4 +8,15 @@ spec:
     ports:
     - port: 9090 
     selector:
+=======
+apiVersion: v1
+kind: Service
+metadata:
+    name: syedgameoflife
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 9090 
+    selector:
+>>>>>>> 809bdcd7d4d67d856f509c6c84d2db94b655f526
         app: syedgameoflife
